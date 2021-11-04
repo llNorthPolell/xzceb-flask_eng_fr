@@ -32,7 +32,7 @@ class TestTranslator(test.TestCase):
 
     ## Should fail
     def test_frenchToEnglish_fail(self):
-        textToTranslate='Est-ce je peux aller aux toilettes?'
+        textToTranslate='Est-ce je peux aller a la toilette?'
         expected = 'Hello'
         actual = translator.french_to_english(textToTranslate)
         self.verboseTest('test_frenchToEnglish_fail',textToTranslate,expected,actual)
